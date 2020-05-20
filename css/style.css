@@ -22,6 +22,12 @@ body {
     font-family: Didact, sans-serif;
     color: #fff;
     background-color: #000;
+    min-width: 1878px;
+}
+
+.container {
+    width: 1878px;
+    margin: 0 auto;
 }
 
 .wrapper {
