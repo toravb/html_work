@@ -1,0 +1,110 @@
+@font-face {
+    font-family: Adonis;
+    src: url("../fonts/Adonis.ttf");
+}
+
+@font-face {
+    font-family: Ahellya;
+    src: url("../fonts/Ahellya.ttf");
+}
+
+@font-face {
+    font-family: Didact;
+    src: url("../fonts/Didact.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Didact, sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.head__img {
+    max-width: 652px;
+    max-height: 236px;
+}
+
+.nav {
+    font-family: Ahellya;
+    font-size: 49px;
+    text-align: center;
+    margin-top: 65px;
+}
+
+.nav__link {
+    text-decoration: none;
+    transition: 0.1s linear;
+    color: white;
+    padding: 47px;
+}
+
+.nav__link:hover {
+    color: #666666;
+}
+
+.block-1 {
+    margin-top: 65px;
+    text-transform: uppercase;
+}
+
+.preview {
+    display: grid;
+    grid-template-columns: 135px 1fr;
+    grid-template-rows: 1fr 0.4fr;
+}
+
+.prof {
+    font-family: Adonis;
+    font-size: 81px;
+    margin-top: 427px;
+}
+
+.prof__text {
+    transform: rotate(-90deg);
+}
+
+.name {
+    font-family: Adonis;
+    font-size: 102px;
+    margin-top: 170px;
+    line-height: 120%;
+    padding-left: 50px;
+}
+
+.line {
+    padding-top: 85px;
+    padding-right: 40px;
+}
+
+.hr {
+    border: none;
+    background-color: white;
+}
+
+.category {
+    font-family: Didact;
+    font-size: 29px;
+    line-height: 30px;
+    padding-left: 5px;
+}
+
+.num {
+    font-family: Adonis;
+    font-size: 102px;
+}
+
+.photo__img {
+    max-height: 835px;
+    width: auto;
+}
