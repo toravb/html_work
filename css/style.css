@@ -48,6 +48,14 @@ body {
     margin-top: 65px;
 }
 
+.nav.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 90px;
+    width: 1110px;
+}
+
 .nav__link {
     text-decoration: none;
     transition: 0.1s linear;
@@ -154,7 +162,7 @@ body {
 .line__2 {
     grid-area: 1 / 2 / 3 / 3;
     border-left: 8px solid white;
-    margin-top: 180px;
+    margin-top: 240px;
     margin-left: 64px;
 }
 
@@ -164,6 +172,7 @@ body {
 
 .number__2 {
     transform: rotate(-90deg);
+    margin-top: 45px;
     margin-right: 19px;
 }
 
