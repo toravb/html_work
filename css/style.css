@@ -23,6 +23,7 @@ body {
     color: #fff;
     background-color: #000;
     min-width: 1900px;
+    /*overflow: hidden;*/
 }
 
 .container {
@@ -162,7 +163,7 @@ body {
 .line__2 {
     grid-area: 1 / 2 / 3 / 3;
     border-left: 8px solid white;
-    margin-top: 240px;
+    margin-top: 260px;
     margin-left: 64px;
 }
 
@@ -172,7 +173,7 @@ body {
 
 .number__2 {
     transform: rotate(-90deg);
-    margin-top: 45px;
+    margin-top: 65px;
     margin-right: 19px;
 }
 
