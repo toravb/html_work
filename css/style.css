@@ -61,7 +61,7 @@ body {
     text-decoration: none;
     transition: 0.1s linear;
     color: white;
-    padding: 47px;
+    margin: 47px;
 }
 
 .nav__link:hover {
