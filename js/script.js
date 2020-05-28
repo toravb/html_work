@@ -1,36 +1,36 @@
-$(function () {
-    let menu = $("#menu");
-    let about = $("#about");
-    let aboutH = about.innerHeight();
-    let scrollPos = $(window).scrollTop();
-
-    checkScroll(scrollPos, aboutH);
-
-    $(window).on("scroll", function () {
-        aboutH = about.innerHeight();
-        scrollPos = $(this).scrollTop();
-
-        checkScroll(scrollPos, aboutH);
-    });
-
-    function checkScroll(scrollPos, aboutH) {
-        if (scrollPos > aboutH) {
-            menu.addClass("fixed");
-        } else {
-            menu.removeClass("fixed")
-        }
-    }
-    //плавный скролл
-    $("[data-scroll]").on("click", function (event) {
-        event.preventDefault();
-
-        let blockId = $(this).data('scroll'),
-            blockOffset = $(blockId).offset().top;
-
-        $("html, body").animate({
-            scrollTop: blockOffset
-        }, 700)
-    });
+// $(function () {
+//     let menu = $("#menu");
+//     let about = $("#about");
+//     let aboutH = about.innerHeight();
+//     let scrollPos = $(window).scrollTop();
+//
+//     checkScroll(scrollPos, aboutH);
+//
+//     $(window).on("scroll", function () {
+//         aboutH = about.innerHeight();
+//         scrollPos = $(this).scrollTop();
+//
+//         checkScroll(scrollPos, aboutH);
+//     });
+//
+//     function checkScroll(scrollPos, aboutH) {
+//         if (scrollPos > aboutH) {
+//             menu.addClass("fixed");
+//         } else {
+//             menu.removeClass("fixed")
+//         }
+//     }
+//     //плавный скролл
+//     $("[data-scroll]").on("click", function (event) {
+//         event.preventDefault();
+//
+//         let blockId = $(this).data('scroll'),
+//             blockOffset = $(blockId).offset().top;
+//
+//         $("html, body").animate({
+//             scrollTop: blockOffset
+//         }, 700)
+//     });
     //скролл
     /*
     let anchors = [];
@@ -76,5 +76,5 @@ $(function () {
     window.addEventListener('scroll mousewheel', e => e.preventDefault(), { passive: false });
     document.addEventListener('mousewheel', e => e.preventDefault(), { passive: false });*/
 
-});
+// });
 

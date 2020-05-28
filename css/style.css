@@ -1,3 +1,4 @@
+/*settings*/
 @font-face {
     font-family: Adonis;
     src: url("../fonts/Adonis.ttf");
@@ -32,6 +33,8 @@ body {
     background-color: #000;
 }
 
+/*block1-block2*/
+
 .container {
     margin: 0;
 }
@@ -47,7 +50,7 @@ body {
 }
 
 .nav {
-    font-family: Ahellya;
+    font-family: Ahellya, sans-serif;
     font-size: 49px;
     text-align: center;
     margin-top: 50px;
@@ -63,6 +66,7 @@ body {
     color: white;
     margin: 47px;
 }
+
 
 .nav__link:hover {
     color: #666666;
@@ -80,7 +84,7 @@ body {
 }
 
 .prof {
-    font-family: Adonis;
+    font-family: Adonis, sans-serif;
     font-size: 81px;
     margin-top: 430px;
     max-width: 150px;
@@ -91,7 +95,7 @@ body {
 }
 
 .name {
-    font-family: Adonis;
+    font-family: Adonis, sans-serif;
     font-size: 102px;
     margin-top: 170px;
     line-height: 120%;
@@ -110,14 +114,14 @@ body {
 }
 
 .category {
-    font-family: Didact;
+    font-family: Didact, sans-serif;
     font-size: 29px;
     line-height: 30px;
     padding-left: 5px;
 }
 
 .num {
-    font-family: Adonis;
+    font-family: Adonis, sans-serif;
     font-size: 102px;
 }
 
@@ -138,7 +142,7 @@ body {
 }
 
 .bio {
-    font-family: Adonis;
+    font-family: Adonis, sans-serif;
     font-size: 88px;
     text-transform: uppercase;
     margin-top: 140px;
@@ -149,7 +153,7 @@ body {
 }
 
 .about {
-    font-family: Didact;
+    font-family: Didact, sans-serif;
     font-size: 33px;
     text-transform: none;
 }
@@ -184,95 +188,93 @@ body {
 }
 
 
+/*contact*/
 
-
-.footer {
-    margin-top: 150px;
-    margin-bottom: 30px;
-}
-
-.wrapper__footer {
+.contact__info {
     display: grid;
-    grid-template-columns: 1.5fr 0.85fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr;
+    max-width: 960px;
+    margin-top: 180px;
 }
 
-.footer__link {
-    text-decoration: none;
+.pad {
+    margin-left: 135px;
 }
 
-.footer__icon {
-    max-height: 75px;
-}
-
-.footer__img {
-    text-align: right;
-}
-
-.footer__img {
-    margin-top: 20px;
-}
-
-.footer__photo {
-    max-height: 690px;
-    width: auto;
-}
-
-.footer__title {
-    font-family: Adonis;
+.contact__title {
+    font-family: Adonis, sans-serif;
+    font-size: 75px;
     text-transform: uppercase;
-    font-size: 80px;
+}
+
+.contact__text {
+    font-family: Didact, sans-serif;
+    font-size: 30px;
+    margin-top: 40px;
 }
 
 .__text {
-    font-family: Didact;
-    font-size: 30px;
-    padding-right: 535px;
+    margin-right: 250px;
 }
 
-.footer__inner {
-    padding-top: 75px;
+.contact__link:not(:last-child) {
+    margin-right: 60px;
 }
 
-.footer__info {
-    margin-left: 150px;
+.contact__icon {
+    margin-top: 60px;
+    margin-bottom: 80px;
 }
 
-.sub__text {
-    margin-top: 30px;
+.__icon {
+    max-width: 100px;
+    height: auto;
 }
 
-.footer__ico {
-    margin-top: 55px;
+.__photo1 {
+    max-width: 693px;
+    height: auto;
 }
-
-.footer__sub__inner {
+/*-----------*/
+.contact__ {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 100px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 0.1fr;
+    margin-top: 130px;
 }
 
-.footer__photo2 {
-    max-height: 175px;
-}
-
-.footer__line {
-    border: none;
-    background-color: white;
-    margin-top: 30px;
-}
-
-.footer__num {
+.contact__photo2 {
     text-align: right;
 }
 
-.footer__number {
-    font-family: Adonis;
-    font-size: 70px;
-    padding-right: 20px;
-    padding-top: 90px;
+.__photo2 {
+    max-width: 475px;
+    height: auto;
+}
+
+.contact__add {
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+}
+
+.contact__number {
+    font-family: Adonis, sans-serif;
+    font-size: 102px;
+}
+
+.contact__num {
+    margin: -60px 30px -60px 30px;
+}
+
+.contact__line {
+    border: 5px solid white;
+    height: 0;
+    margin-top: 30px;
 }
 
 
+/*media*/
 @media (max-width: 1462px) {
     .container{
         max-width: 1440px;
@@ -344,6 +346,22 @@ body {
         padding: 15px 0;
     }
 
+    .contact__ {
+        display: none;
+    }
+
+    .contact__title {
+        margin-left: 24px;
+        font-size: 70px;
+    }
+
+    .contact__text {
+        margin-left: 24px;
+    }
+
+    .__text {
+        margin-right: 40px;
+    }
 }
 
 @media (max-width: 767px) {
