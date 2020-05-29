@@ -292,11 +292,22 @@ body {
         padding-right: 0;
         margin-left: 125px;
     }
+
+
+    .gallery__number {
+        margin-left: 0;
+    }
+
+
 }
 
 @media (max-width: 1300px) {
     .container {
         max-width: 1200px;
+    }
+
+    .gallery__add {
+        margin-left: 10px;
     }
 }
 
@@ -361,6 +372,10 @@ body {
 
     .__text {
         margin-right: 40px;
+    }
+
+    .gallery__line {
+        display: none;
     }
 }
 
